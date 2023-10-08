@@ -150,3 +150,45 @@ body {
     height: 30px;
     margin-bottom: 4px;
 }
+
+.menu-hamburguer {
+    display: none;
+}
+
+/*
+CSS MEDIA QUERIES
+*/
+
+@media (max-width: 1024px) {
+
+    .page {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "right right right";
+    }
+
+    .menu-hamburguer {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .menu-hamburguer > span {
+        color: #FFFFFF;
+        background-color: #6ae7be;
+        border-radius: 50%;
+        padding: 14px;
+    }
+
+    span.size-24 {
+        font-size: 24px;
+        font-variation-settings: 'OPSZ' 24;
+      }
+
+    .left-content,.navigation-bar {
+        display: none;
+    }
+
+}
