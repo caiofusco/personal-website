@@ -167,6 +167,7 @@ CSS MEDIA QUERIES
     }
 
     .menu-hamburguer {
+        display: block;
         position: absolute;
         cursor: pointer;
         top: 0;
