@@ -1,9 +1,9 @@
 // adicionando as variaveis
-const btnMenuHome = document.getElementById("home");
-const btnMenuSobre = document.getElementById("sobre");
-const btnMenuProjetos = document.getElementById("projetos");
-const btnMenuAcademico = document.getElementById("academico");
-const btnMenuContato = document.getElementById("contato");
+const btnMenuHome = document.querySelector("#home");
+const btnMenuSobre = document.querySelector("#sobre");
+const btnMenuProjetos = document.querySelector("#projetos");
+const btnMenuAcademico = document.querySelector("#academico");
+const btnMenuContato = document.querySelector("#contato");
 
 const rightContent = document.querySelector(".right-content");
 const rightContentSobre = document.querySelector(".right-content-sobre");
@@ -29,7 +29,8 @@ btnMenuSobre.addEventListener("click", openSobre = () => {
   rightContentContato.style.display = "none";
 });
 
-rightContentProjetos.addEventListener("click", openProjetos = () => {
+btnMenuProjetos.addEventListener("click", openProjetos = () => {
+  console.log("clicou");
   rightContent.style.display = "none";
   rightContentSobre.style.display = "none";
   rightContentProjetos.style.display = "block";
@@ -37,7 +38,7 @@ rightContentProjetos.addEventListener("click", openProjetos = () => {
   rightContentContato.style.display = "none";
 });
 
-rightContentAcademico.addEventListener("click", openAcademico = () => {
+btnMenuAcademico.addEventListener("click", openAcademico = () => {
   rightContent.style.display = "none";
   rightContentSobre.style.display = "none";
   rightContentProjetos.style.display = "none";
@@ -45,7 +46,7 @@ rightContentAcademico.addEventListener("click", openAcademico = () => {
   rightContentContato.style.display = "none";
 });
 
-rightContentContato.addEventListener("click", openContato = () => {
+btnMenuContato.addEventListener("click", openContato = () => {
   rightContent.style.display = "none";
   rightContentSobre.style.display = "none";
   rightContentProjetos.style.display = "none";
