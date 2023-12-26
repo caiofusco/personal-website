@@ -1,34 +1,22 @@
 // adicionando as variaveis
-const menuHome = document.getElementById("home");
-const menuSobre = document.getElementById("sobre");
-const menuProjetos = document.getElementById("projetos");
-const menuAcademico = document.getElementById("academico");
-const menuContato = document.getElementById("contato");
+const btnMenuHome = document.getElementById("home");
+const btnMenuSobre = document.getElementById("sobre");
+const btnMenuProjetos = document.getElementById("projetos");
+const btnMenuAcademico = document.getElementById("academico");
+const btnMenuContato = document.getElementById("contato");
 
-// Adicionar um evento de clique à tag
+const rightContent = document.querySelector(".right-content");
+const rightContentSobre = document.querySelector(".right-content-sobre");
 
-menuHome.addEventListener("click", function() {
 
-  // Selecionar a tag section com a classe "right-content"
-  const titleRightContent = document.getElementById("title-right-content");
-  const textRightContent = document.getElementById("text-right-content");
+// adicionando os eventos de clique
 
-  // Modificar as propriedades da tag conforme necessário
-  titleRightContent.textContent = "Caio Fusco";
-  textRightContent.textContent = "Desenvolvedor Android Nativo - Kotlin";
-
+btnMenuHome.addEventListener("click", openHome = () => {
+  rightContent.style.display = "block";
+  rightContentSobre.style.display = "none";
 });
 
-menuSobre.addEventListener("click", function() {
-
-  // Selecionar a tag section com a classe "right-content"
-  const titleRightContent = document.getElementById("title-right-content");
-  const textRightContent = document.getElementById("text-right-content");
-
-  // Modificar as propriedades da tag conforme necessário
-  titleRightContent.textContent = "É isso meu brother!";
-  textRightContent.textContent = "Manda salve";
-
+btnMenuSobre.addEventListener("click", openSobre = () => {
+  rightContentSobre.style.display = "block";
+  rightContent.style.display = "none";
 });
-
-
