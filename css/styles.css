@@ -155,6 +155,77 @@ body {
     color: #f5f5f5;
 }
 
+/*CONTEÚDO ACADEMICO LADO DIREITO*/
+
+.right-content-academico {
+    grid-area: right;
+    color: #f5f5f5;
+    display: none;
+    overflow: auto;
+}
+
+.container-right-content-academico {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 50px;
+}
+
+.container-right-content-academico>h1 {
+    margin-top: 15px;
+}
+
+.container-right-content-academico>p {
+    margin-top: 25px;
+}
+
+/*CONTEÚDO CONTATO LADO DIREITO*/
+
+.right-content-contato {
+    grid-area: right;
+    color: #f5f5f5;
+    display: none;
+    overflow: auto;
+}
+
+.container-right-content-contato {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 50px;
+}
+
+.container-right-content-contato>h1 {
+    font-size: 1.9rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    width: 100%;
+    align-items: center;
+}
+
+.contacts-list>a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #2b98c4;
+    margin-left: 8px;
+}
+
+.contacts-list>img {
+    width: 30px;
+    height: 30px;
+}
+
 .navigation-bar {
     grid-area: nav;
     background-color: #444444;
