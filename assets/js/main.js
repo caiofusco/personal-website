@@ -1,4 +1,3 @@
-// adicionando as variaveis
 const btnMenuHome = document.querySelector("#home");
 const btnMenuSobre = document.querySelector("#sobre");
 const btnMenuProjetos = document.querySelector("#projetos");
@@ -10,8 +9,6 @@ const rightContentSobre = document.querySelector(".right-content-sobre");
 const rightContentProjetos = document.querySelector(".right-content-projetos");
 const rightContentAcademico = document.querySelector(".right-content-academico");
 const rightContentContato = document.querySelector(".right-content-contato");
-
-// adicionando os eventos de clique
 
 btnMenuHome.addEventListener("click", openHome = () => {
   rightContent.style.display = "block";

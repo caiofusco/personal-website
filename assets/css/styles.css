@@ -26,56 +26,82 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 100vh;
+    justify-content: center;
+    height: 96%;
 }
 
 .container-profile-photo {
-    margin-top: 64px;
-    text-align: center;
-    width: 100%;
+    width: 180px;
     height: 180px;
 }
 
 .container-profile-photo>img {
-    width: 180px;
+    width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
+.texts-and-links-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #name {
-    padding-top: 16px;
+    margin-top: 8px;
     font-size: 1.6rem;
     font-weight: 700;
     color: #f5f5f5;
 }
 
 #title {
-    padding-top: 8px;
+    margin-top: 8px;
     font-size: 0.9rem;
     color: #BBBBBB;
 }
 
 .link-list {
+    margin-top: 8px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .link-list>li {
     list-style: none;
-    margin: 0.4rem;
+    padding: 0.4rem;
 }
 
-.link-list>li>a>img {
-    width: 18px;
-    height: 18px;
+
+.link-list>li>a>i {
+    font-size: 1.5rem;
+}
+
+.fa-linkedin-in {
+    color: #2272ce;
+}
+
+.fa-linkedin-in:hover {
+    color: #ffffff;
+}
+
+.fa-github {
+    color: #f5f5f5;
+}
+
+.fa-github:hover {
+    color: #222222;
 }
 
 #text-left-content-bottom {
     color: #f5f5f5;
-    margin-bottom: 8px;
+    text-align: center;
 }
 
 #btn-download-cv {
+    margin-top: 8px;
     width: 160px;
     height: 48px;
     font-size: 0.9rem;
@@ -86,6 +112,12 @@ body {
     cursor: pointer;
     border: 1px solid white;
     border-radius: 16px;
+}
+
+#btn-download-cv:hover {
+    background-color: #f5f5f5;
+    color: #222222;
+    border: 1px solid #222222;
 }
 
 .right-content {
@@ -268,6 +300,20 @@ body {
 
 .menu-hamburguer {
     display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.fa-bars {
+    color: #F5F5F5;
+    font-size: 1.4rem;
+    background-color: #6AE7bE;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 /*WEBKITS*/
@@ -287,37 +333,17 @@ body {
 CSS MEDIA QUERIES
 */
 
-@media (max-width: 1024px) {
-
+@media (max-width: 768px) {
     .page {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "right right right";
+        grid-template-columns: 1fr;
+        grid-template-areas: "right";
     }
 
     .menu-hamburguer {
         display: block;
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        right: 0;
-        margin-right: 20px;
-        margin-top: 20px;
     }
-
-    .menu-hamburguer > span {
-        color: #FFFFFF;
-        background-color: #6ae7be;
-        border-radius: 50%;
-        padding: 14px;
-    }
-
-    span.size-24 {
-        font-size: 24px;
-        font-variation-settings: 'OPSZ' 24;
-      }
 
     .left-content,.navigation-bar {
         display: none;
     }
-
 }
