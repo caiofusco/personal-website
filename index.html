@@ -26,35 +26,40 @@
         <section class="navigation-bar">
             <header>
                 <ul class="nav-list">
+                    
                     <li>
-                        <a id="home" href="#">
+                        <button class="home" type="button">
                             <img src="assets/img/icon-home.png" alt="Home">
-                            Home
-                        </a>
+                            <span>Home</span>
+                        </button>
                     </li>
+
                     <li>
-                        <a id="sobre" href="#">
+                        <button class="sobre" type="button">
                             <img src="assets/img/icon-sobre.png" alt="Sobre">
-                            Sobre
-                        </a>
+                            <span>Sobre</span>
+                        </button>
                     </li>
+
                     <li>
-                        <a id="projetos" href="#">
+                        <button class="projetos" type="button">
                             <img src="assets/img/icon-projetos.png" alt="Projetos">
-                            Projetos
-                        </a>
+                            <span>Projetos</span>
+                        </button>
                     </li>
+
                     <li>
-                        <a id="academico" href="#">
+                        <button class="academico" type="button">
                             <img src="assets/img/icon-academico.png" alt="Academico">
-                            Acadêmico
-                        </a>
+                            <span>Acadêmico</span>
+                        </button>
                     </li>
+
                     <li>
-                        <a id="contato" href="#">
+                        <button class="contato" type="button">
                             <img src="assets/img/icon-home.png" alt="Contato">
-                            Contato
-                        </a>
+                            <span>Contato</span>
+                        </button>
                     </li>
                 </ul>
             </header>
@@ -86,14 +91,14 @@
                     </a>
                 </div>
             </div>
-            <p id="text-left-content-bottom">Caio Fusco - 2023</p>
+            <p id="text-left-content-bottom">Caio Fusco - 2024</p>
         </section>
 
         <!--CONTEÚDO LADO DIREITO-->
         <section class="right-content">
             <div class="container-right-content">
                 <h1 id="title-right-content">Caio Fusco</h1>
-                <p id="text-right-content">Desenvolvedor Android Nativo</p>
+                <p id="text-right-content">HTML | CSS | JavaScript | Kotlin | Java</p>
             </div>
         </section>
 
@@ -149,6 +154,9 @@
                 <h1>Idiomas</h1>
                 <p>Inglês - Avançado.</p>
                 <h1>Certificados</h1>
+                <a class="link-right-content-academico" href="https://www.efset.org/cert/5qxYb5" target="_blank">
+                    EF SET Certificate (C2 Proficient)
+                </a>
             </div>
         </section>
 
@@ -175,8 +183,45 @@
 
         <!--MENU HAMBURGUER-->
 
-        <div class="menu-hamburguer">
+        <div class="btn-menu-hamburguer">
             <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="menu-hamburguer">
+
+            <div class="btn-close-menu-hamburguer">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <section class="menu-hamburguer__container">
+                <ul class="menu-hamburguer__content">
+                    <li class="menu-hamburguer__li">
+                        <button class="menu-hamburguer__home" type="button">
+                            <span>Home</span>
+                        </button>
+                    </li>
+                    <li class="menu-hamburguer__li">
+                        <button class="menu-hamburguer__sobre" type="button">
+                            <span>Sobre</span>
+                        </button>
+                    </li>
+                    <li class="menu-hamburguer__li">
+                        <button class="menu-hamburguer__projetos" type="button">
+                            <span>Projetos</span>
+                        </button>
+                    </li>
+                    <li class="menu-hamburguer__li">
+                        <button class="menu-hamburguer__academico" type="button">
+                            <span>Acadêmico</span>
+                        </button>
+                    </li>
+                    <li class="menu-hamburguer__li">
+                        <button class="menu-hamburguer__contato" type="button">
+                            <span>Contatos</span>
+                        </button>
+                    </li>
+                </ul>
+            </section>
         </div>
     </div>
 
