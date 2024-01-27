@@ -232,7 +232,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 50px;
+    padding: 50px 8px 0px 20px;
 }
 
 .container-right-content-contato>h1 {
@@ -255,7 +255,7 @@ body {
 }
 
 .contacts-list>a {
-    font-size: 1.4rem;
+    font-size: 1.3425rem;
     text-decoration: none;
     color: #2b98c4;
     margin-left: 8px;
@@ -400,7 +400,13 @@ body {
 CSS MEDIA QUERIES
 */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+    .btn-menu-hamburguer {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
     .page {
         grid-template-columns: 1fr;
         grid-template-areas: "right";
@@ -410,7 +416,7 @@ CSS MEDIA QUERIES
         display: block;
     }
 
-    .left-content,.navigation-bar {
+    .left-content, .navigation-bar {
         display: none;
     }
 }
