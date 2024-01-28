@@ -145,6 +145,10 @@ body {
     text-align: center;
 }
 
+.container-right-content .link-list {
+    display: none;
+}
+
 /*CONTEÚDO SOBRE LADO DIREITO*/
 
 .right-content-sobre {
@@ -410,6 +414,10 @@ CSS MEDIA QUERIES
     .page {
         grid-template-columns: 1fr;
         grid-template-areas: "right";
+    }
+
+    .container-right-content .link-list {
+        display: flex;
     }
 
     .btn-menu-hamburguer {
